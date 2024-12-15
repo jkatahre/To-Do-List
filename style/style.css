@@ -30,41 +30,47 @@
     overflow-x: hidden;
 }
 
-#li .li {
-    list-style: none;
+#li li {
     margin: 6px;
-    padding: 1px;
-    background-color: gray;
+    padding: 3px 0px 0px 30px;
+    background-color: white;
     border-radius: 5px;
-    color: white;
+    color: black;
+    cursor: default;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    list-style: auto;
+    list-style-position: inside;
 }
 
 .img {
-    background-color: gray;
+    background-color: white;
     border: none;
 }
 
 .btn {
     border: none;
-    background-color: gray;
-    margin:0px 10px;
+    background-color: white;
+    margin: 0px 10px;
     cursor: pointer;
 
 }
-.span{
+
+.span {
     cursor: pointer;
-} 
-.done{
+}
+
+.done {
     text-decoration: line-through;
 }
+
 @media screen and (max-width : 900px) {
-    .box input{
+    .box input {
         margin: 12px 0px;
     }
-    .container{
+
+    .container {
         height: 72vh;
     }
 }

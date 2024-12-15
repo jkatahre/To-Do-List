@@ -15,10 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let addItem = (item) => {
         let new_item = document.createElement("li");
 
-        new_item.innerHTML = `<li class="li">
-                <span class="span">${item}</span>
-                 <button class="btn"><img class="img" src="assets/png/cancel.png" alt="cancle"></button>
-            </li>`
+        new_item.innerHTML = `${item} <button class="btn"><img class="img" src="assets/png/cancel.png" alt="cancle"></button>`
         To_Do.appendChild(new_item);
 
         // let li = document.querySelectorAll(".span").forEach(e => {
