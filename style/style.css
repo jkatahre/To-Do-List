@@ -4,15 +4,25 @@
 }
 
 .container {
-    height: 75vh;
+    /* height: 75vh;
     width: 55vw;
+    width: 30vw; 
+    background-color: #d0fcfc; */
+    margin: 0px auto;
+    margin-top: 45px;
+}
+
+.container1 {
+    height: 72vh;
+    width: 30vw;
     background-color: #d0fcfc;
-    margin: 55px auto;
+    margin: 15px auto;
 }
 
 .box input {
     padding: 8px 2px;
     width: 53vw;
+    /* width: 28vw; */
     font-size: 16px;
     background-color: aliceblue;
     margin: 12px 11px;
@@ -25,6 +35,17 @@
     border-radius: 5px;
     height: 64vh;
     width: 53vw;
+    /* width: 28vw; */
+    margin: auto;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.store1 {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 64vh;
+    width: 28vw;
     margin: auto;
     overflow: auto;
     overflow-x: hidden;
@@ -33,6 +54,48 @@
 #li li {
     margin: 6px;
     padding: 3px 0px 0px 30px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: auto;
+    list-style-position: inside;
+}
+
+#running li {
+    margin: 6px;
+    padding: 3px 0px 0px 30px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: auto;
+    list-style-position: inside;
+}
+
+#pending li {
+    margin: 6px;
+    padding: 3px 0px 0px 30px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: auto;
+    list-style-position: inside;
+}
+
+#li2 li {
+    margin: 6px;
+    padding: 3px 0px 3px 30px;
     background-color: white;
     border-radius: 5px;
     color: black;
@@ -53,6 +116,7 @@
     border: none;
     background-color: white;
     margin: 0px 10px;
+    margin-left: 3px;
     cursor: pointer;
 
 }
@@ -65,12 +129,61 @@
     text-decoration: line-through;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    display: flex;
+}
+
+.devidwork {
+    padding: 3px 71px;
+}
+
+.btn2 {
+    border: none;
+    background-color: white;
+    margin: 0px 0px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
 @media screen and (max-width : 900px) {
+    .flex{
+        display: inline;
+    }
     .box input {
-        margin: 12px 0px;
+        margin: 8px 0px;
+        padding: 9px 72px;
     }
 
-    .container {
-        height: 72vh;
+    .container1 {
+        height: 56vh;
+        width: 90vw;
+        background-color: #d0fcfc;
+        margin: 15px auto;
+    }
+
+    .container1 {
+        height: 59vh;
+        width: 90vw;
+        background-color: #d0fcfc;
+        margin: 15px auto;
+    }
+
+
+    .store1 {
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 52vh;
+        width: 85vw;
+        margin: auto;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    .devidwork {
+        padding: 3px 46px;
     }
 }
