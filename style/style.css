@@ -149,6 +149,12 @@
     margin-left: auto;
 }
 
+.time{
+    margin: auto;
+    font-size: 10px;
+    font-family: emoji;
+}
+
 @media screen and (max-width : 900px) {
     .flex{
         display: inline;

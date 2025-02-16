@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     class Task {
         id = 1
         taskName = ""
-        date = null
+        Date = null
         isCompleted = false
         constructor(id, taskName) {
             this.id = id
@@ -76,10 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function generateUI(currItem) {
+        let date = new Date();
+        let time = date.toLocaleString()
         // for (let i=0; i < itemsList.length; i++) {
         // let currItem = itemsList[i]
         let new_item = document.createElement("li");
-        new_item.innerHTML = `${currItem.taskName} <button class="btn2"><img style="height: 22px; margin: 1px 5px;" src="assets/png/yes.png" alt="yes"></button><button class="btn"><img class="img" src="assets/png/cancel.png" alt="cancle"></button>`
+        new_item.innerHTML = `${currItem.taskName} <p class="time" >${time}</p> <button class="btn2"><img style="height: 22px; margin: 1px 5px;" src="assets/png/yes.png" alt="yes"></button><button class="btn"><img class="img" src="assets/png/cancel.png" alt="cancle"></button>`
         // To_Do.appendChild(new_item)
         running_work.appendChild(new_item)
 
@@ -88,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         new_item.addEventListener("click", () => {
             // new_item.style.textDecoration = "line-through";
             // new_item.classList.toggle("done")
-            pending_work.appendChild(new_item);
+            pending_work.appendChild(new_item)
         });
 
 
@@ -112,11 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 })
             })
         })
-
-        // complite_Work.addEventListener("click", ()=>{
-        //     console.log("working")
-        //     complite_Work.appendChild(new_item)
-        // })
 
         console.log(itemsList)
         localStorage.setItem("task", JSON.stringify(itemsList))
