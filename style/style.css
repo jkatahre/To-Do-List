@@ -51,7 +51,7 @@
     overflow-x: hidden;
 }
 
-#li li {
+#li div {
     margin: 6px;
     padding: 3px 0px 0px 30px;
     background-color: white;
@@ -65,7 +65,22 @@
     list-style-position: inside;
 }
 
-#running li {
+.task_container{
+    display: flex;
+}
+
+.newItems {
+    margin: 6px;
+    padding: 3px 0px 0px 30px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: default;
+    list-style: auto;
+    list-style-position: inside;
+}
+
+#panding div{
     margin: 6px;
     padding: 3px 0px 0px 30px;
     background-color: white;
@@ -79,21 +94,7 @@
     list-style-position: inside;
 }
 
-#pending li {
-    margin: 6px;
-    padding: 3px 0px 0px 30px;
-    background-color: white;
-    border-radius: 5px;
-    color: black;
-    cursor: default;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: auto;
-    list-style-position: inside;
-}
-
-#li2 li {
+#li2 div {
     margin: 6px;
     padding: 3px 0px 3px 30px;
     background-color: white;
